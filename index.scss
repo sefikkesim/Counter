@@ -2,12 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color:rgb(243, 236, 236);
 }
-
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 *{
     @include body;
 }
 .container{
-    background: rgb(185, 181, 181);
-    width: 40rem;
+    @include flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+.counter{
+    @include flex;
+    padding: 2rem;
+    h2{
+        font-size: 2rem;
+        color:rebeccapurple;
+        font-weight: 900;
+    }
+    span{
+        margin: 1rem;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+}
+}
+.btn{
+    width: 5rem;
+    height: 2rem;
+    margin: 2rem;
+    border-radius: 0.2rem;
+    background-color: gray;
+    color: rebeccapurple;
+    filter: drop-shadow( 0.5rem 0.5rem 0.5rem, rgb(141, 130, 130));
+    border: 0.2rem solid gray;
+
 }

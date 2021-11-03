@@ -3,10 +3,62 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #f3ecec;
 }
 
 .container {
-  background: #b9b5b5;
-  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.counter h2 {
+  font-size: 2rem;
+  color: rebeccapurple;
+  font-weight: 900;
+}
+
+.counter span {
+  margin: 1rem;
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.btn {
+  width: 5rem;
+  height: 2rem;
+  margin: 2rem;
+  border-radius: 0.2rem;
+  background-color: gray;
+  color: rebeccapurple;
+  -webkit-filter: drop-shadow(0.5rem 0.5rem 0.5rem, #8d8282);
+          filter: drop-shadow(0.5rem 0.5rem 0.5rem, #8d8282);
+  border: 0.2rem solid gray;
 }
 /*# sourceMappingURL=index.css.map */
